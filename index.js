@@ -10,9 +10,6 @@ bot.on('message', function(msg){
   console.log('msg', msg)
 })
 
-bot.onText( /(.*)\?/, function(msg, match){
-  bot.sendMessage( msg.chat.id, '42' )
-})
 
 var logErrorEcho = function logErrorEcho(msg) {
   return function (err) {
@@ -37,3 +34,4 @@ var send42 = function(msg, match){
 };
 
 bot.onText( /\/echo (.*)/, sendEcho);
+bot.onText( /(.*)\?/, send42);
