@@ -48,20 +48,6 @@ var storeUser = function(msg, match){
 
 }
 
-//51112220 luiz
- /* bot.sendMessage( 51112220, 'Já testei aqui, valeu :)' );
-  bot.sendMessage( 137347469, 'Já testei aqui, valeu :)' );
-  bot.sendMessage( 28163458, 'Já testei aqui, valeu :)' );*/
- // bot.sendMessage( 51112220, 'MArromenos' );
- // bot.sendMessage( 436983798, 'Faz isso não' );
-
-//28163458 Dai
-  //bot.sendMessage( 28163458, 'Minina Dai Me diz se chegar alguma coisa ai' );
-
-//137347469 guilherme
-//  bot.sendMessage( 137347469, 'teste Gui Me diz se chegar alguma coisa ai' );
-
-
 bot.onText( /\/echo (.*)/, sendEcho);
 bot.onText( /(.*)\?/, send42);
 bot.onText( /\/start/, storeUser);
